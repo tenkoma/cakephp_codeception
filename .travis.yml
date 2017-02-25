@@ -20,8 +20,8 @@ before_install:
   - rm composer.lock
   - composer install --prefer-source
   - vendor/bin/codecept bootstrap
-  - vendor/bin/codecept generate:cest Functional Foo
-  - vendor/bin/codecept generate:cept Functional Foo
+  - vendor/bin/codecept generate:cest functional Foo
+  - vendor/bin/codecept generate:cept functional Foo
   - cd ../sample_app
   - cp ../test_app/composer.json .
   - cp ../Fixture/Installer.php src/Console/.
